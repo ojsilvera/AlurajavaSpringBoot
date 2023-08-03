@@ -73,3 +73,32 @@ Resumen del texto como un DBA experto:
 
 Este resumen destaca los conceptos clave y el proceso de trabajar con MySQL Workbench y ejecutar comandos SQL en el
 entorno gráfico.
+
+## Crear base de datos
+
+Resumen del texto como un DBA experto:
+
+1. Creación de una base de datos en MySQL:
+   - Para crear una base de datos, se utiliza el comando "CREATE DATABASE" seguido del nombre de la base de datos.
+   - La opción "IF NOT EXISTS" evita que se cree la base de datos si ya existe.
+   - Se pueden especificar parámetros como el conjunto de caracteres (character set) y las reglas de comparación
+   (collate) para organizar y comparar los datos.
+
+2. Ejecución de comandos SQL en MySQL Workbench:
+   - En MySQL Workbench, se crea un nuevo script para ejecutar comandos SQL.
+   - Los comandos SQL pueden escribirse en mayúsculas o minúsculas, pero es una buena práctica usar las palabras clave
+   en mayúsculas.
+   - Se utiliza el punto y coma al final de cada comando SQL para indicar que está completo.
+
+3. Visualización de la base de datos creada:
+   - Después de crear la base de datos, se puede encontrar en la lista de bases de datos disponibles en MySQL Workbench.
+   - Si no aparece de inmediato, se puede actualizar la lista haciendo clic derecho y seleccionando "Refresh".
+
+4. Ubicación de los archivos de base de datos:
+   - Los archivos de las bases de datos en MySQL se almacenan en una ruta específica en el sistema.
+   - El archivo de inicialización (my.ini) contiene la ruta del directorio de datos (datadir) donde se almacenan las
+   bases de datos.
+   - La carpeta "data" contiene los archivos de las tablas de las bases de datos creadas.
+
+Este resumen destaca el proceso de creación de una base de datos en MySQL, la ejecución de comandos SQL en MySQL
+Workbench, y la ubicación de los archivos de la base de datos en el sistema.
