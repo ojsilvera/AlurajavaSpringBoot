@@ -2,30 +2,74 @@
 
 Las principales definiciones a tener en cuenta en mySQL son:
 
-1. Organización de una base de datos: La base de datos es un repositorio que almacena datos que pueden ser consultadosy
-se almacena en un espacio de memoria especial, como un disco duro o una SSD.
+1. La estructura de una base de datos se compone de diversas entidades:
 
-2. Tablas: Las tablas son la entidad más importante de la base de datos y están compuestas por columnas (campos) y
-filas (registros).
+   - La entidad más importante es la tabla, que contiene columnas (campos) y filas (registros).
 
-3. Tipos de campos: Existen diversos tipos de campos, como campos de texto, campos numéricos y campos de fecha, cada
-uno con restricciones específicas sobre los datos que pueden contener.
+   - Los campos tienen un tipo de dato definido y los registros deben respetar esa definición, para evitar errores.
 
-4. Clave primaria: Es un campo único en una tabla que garantiza que ningún registro se repita en sí mismo y asegura la
-integridad de los datos.
+2. Las claves primarias evitan la duplicidad de registros:
 
-5. Clave externa: Permite relacionar tablas entre sí, facilitando la consulta y el acceso a datos relacionados.
+   - Son campos únicos en una tabla que impiden que se repitan registros con el mismo valor en el campo seleccionado
+   como clave.
 
-6. Vistas (Views): Son consultas que combinan información de varias tablas para obtener resultados específicos y facili-
-tar el acceso a la información.
+   - Las claves externas se utilizan para relacionar tablas y garantizar la integridad de los datos.
 
-7. Procedimientos y funciones: Son lógicas estructuradas creadas en SQL que permiten realizar consultas complejas y ma-
-nipular datos según necesidades específicas.
+3. Las bases de datos relacionales permiten utilizar vistas, procedimientos y funciones:
 
-8. Triggers (disparadores): Son activadores que ejecutan acciones o procedimientos cuando se cumplen ciertas condiciones
-en la base de datos.
+   - Las vistas facilitan obtener información de varias tablas al mismo tiempo sin crear una tabla con un gran número
+   de campos.
 
-En resumen, la manipulación de una base de datos involucra la organización de tablas, campos y registros, el uso de cla-
-ves primarias y externas para relacionar datos, la creación de vistas, procedimientos y funciones para obtener resultados
-específicos y el uso de triggers para activar acciones automáticas en respuesta a cambios en la base de datos. Todo esto
-se realiza a través de comandos SQL en un entorno como MySQL, Oracle, SQL Server, o Postgre SQL.
+   - Los procedimientos y funciones permiten realizar lógica estructurada y ejecutar cambios en la base de datos basados
+   en condiciones y comandos SQL.
+
+4. Otras entidades importantes en una base de datos son los esquemas y los triggers:
+
+   - Los esquemas agrupan tablas por temas específicos para facilitar la organización y la administración.
+
+   - Los triggers son alertas que activan funciones o procedimientos cuando ocurre una modificación específica en la
+   base de datos.
+
+## Workbench como IDE para SQL
+
+Resumen del texto como un DBA experto:
+
+1. Instalación y apertura del IDE MySQL Workbench:
+
+   - Se ha instalado el MySQL Workbench, que es utilizado como un cliente para acceder a bases de datos.
+   - Al abrir el IDE, se muestra la página de bienvenida con las conexiones disponibles, donde por defecto se encuentra
+     a conexión local.
+
+2. Conexiones a bases de datos:
+
+   - Se puede agregar una nueva conexión haciendo clic en el botón "+" y proporcionando los detalles de la conexión, como
+   el nombre, tipo y dirección IP del servidor.
+   - El IDE funciona como un cliente y puede tener acceso a varios servidores, pero en este caso, solo se utilizará la
+   instancia local.
+
+3. Uso del área de comandos (Query1):
+
+   - El área de comandos (Query1) es donde se ejecutan todos los comandos SQL.
+   - Se utiliza el comando "use" para activar una base de datos específica antes de ejecutar comandos en ella.
+   - El punto y coma se utiliza para indicar que un comando ha sido ejecutado y se puede pasar al siguiente.
+
+4. Acceso a tablas y visualización de resultados:
+
+   - Se puede acceder a una tabla haciendo doble clic en ella o usando el comando "use" seguido del nombre de la tabla.
+   - Se pueden ejecutar comandos SELECT para obtener datos de las tablas.
+   - El comando SELECT con asterisco (*) devuelve todos los registros de una tabla.
+   - Al seleccionar varias líneas de comandos y ejecutarlas, se obtienen resultados para cada una en una nueva pestaña.
+
+5. Errores en comandos SQL:
+
+   - Es importante utilizar el punto y coma al final de cada comando SQL para evitar errores de sintaxis.
+   - Si no se coloca el punto y coma, puede producirse un error al ejecutar comandos consecutivos.
+
+6. Visualización y ejecución selectiva de comandos:
+
+   - Se puede seleccionar y ejecutar solo un fragmento de comandos en el área de comandos.
+   - Si se selecciona más de un comando y se ejecutan, el IDE los ejecutará en orden y mostrará los resultados en pesta-
+     ñas separadas.
+
+Este resumen destaca los conceptos clave y el proceso de trabajar con MySQL Workbench y ejecutar comandos SQL en el
+entorno gráfico.
