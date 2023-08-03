@@ -20,8 +20,29 @@ fue el acuerdo inicial, sin que el de pago disminuyera a la version libre.
 
 Las características principales de MySQL son:
 
-    servidor robusto.
-    multiacceso.
-    siempre al aire o disponible.
-    de escalabilidad robusta.
-    emisión crítica.
+    - Servidor robusto: mantener la integridad de los datos, muy importante, control de transacciones
+      y acceso a tablas.
+
+    - Multiacces: permite acceso a datos usando DotNET, usando Python, Java, JavaScript, PHP, entre
+      entre otros.
+
+    - Siempre al aire o disponible.
+
+    - Se escalabilidad robusta.
+
+    - Emisión crítica: réplica de servidores siguiendo el esquema master-slave, garantizando la esta-
+      bilidad y dispopnibilidad del sistema ante una falla.
+
+    - Portabilidad: Se puede desarrollar tanto en Windows como en Linux, diferencia de sistemas ope-
+      rativos no tiene ninguna incidencia en que se pueda ejecutar el servidor en cualquiera de ellos.
+
+    - multithreads. el kernel del sistema operativo para aumentar la velocidad de procesamiento, por
+      por medio del manejo completo de la capacidad de procesadores del hardware disponible.
+    
+    - Seguridad: manejo sencillo de usuario y establecimiento de roles y limitaciones a cada uno, se-
+      gun la politicas de la empresa.
+
+    - Velocidad: Es una de las bases de datos más veloces que hay actualmente en el mercado, de la
+      más rápidas e inclusive de las preferidas por e-commerce, por las empresas de e-commerce.
+      Amazon, BigQuery, Azure - que es de Microsoft, BigQuery - de Google, tienen instancias de MySQL
+      para que los usuarios puedan ejecutar MySQL en sus plataformas.
