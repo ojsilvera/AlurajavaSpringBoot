@@ -53,3 +53,22 @@ SQL tiene las siguientes ventajas:
       tible con el otro, porque el lenguaje nativo es el mismo, el lenguaje nativo establecido por
       la ANSI, de modo que no hay ningún problema en ello de ir de Oracle y comenzará a utilizar
       MySQL Server, por ejemplo.
+
+Las desventajas.
+
+    - En la actualidad con la creciente demanda de las redes sociales, del Big Data, cuando se creó
+      SQ no se consideró tanto el impacto que tendría décadas después, entonces esto limita mucho el
+      lenguaje. Para suplir los retos moderno.
+    
+    - Con la cantidad de información y encajarla en este patrón estructurado de bases de datos rela-
+      cionales, resulta difícil en muchos casos, generando un problema de escalabilidad.
+    
+    - La demanda actual de datos dio origen al NoSQL,surge un lenguajes que no sigue los estándares
+      ANSI, es más específico, supliendo una desventaja crucial del sql que es la escalabilidad, pero
+      se torna en un lenguale que sera tenido en cuenta bajo circustancias diferentes a la norma de la
+      ANSI.
+
+    - Otra desventaja es que cada empresa que genera manejadores de datos, utilizo el SQL como nucleo
+      y  creo politicas particulares segun sus necesidades o la de sus clientes e incluyeron componentes
+      de otras diciplinas como estructuras de control de programacion al interior de SQL genrando
+      con ello un lenguaje misto que ahora no solo es para consultas.
