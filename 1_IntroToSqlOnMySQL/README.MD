@@ -1,8 +1,6 @@
-# AlurajavaSpringBoot
+# Introduccion a SQL con MySQL, admistrando tablas y manipulando datos
 
-Notas sobre el curso de Spring boot y java, cursado en alura programa oracle one
-
-## Objetivos de aprendzaje
+## Objetivos de aprendizaje
 
 - Aprenda a instalar y acceda a la base de datos MySQL
   
