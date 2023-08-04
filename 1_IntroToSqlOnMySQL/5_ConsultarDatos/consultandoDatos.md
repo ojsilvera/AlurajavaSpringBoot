@@ -173,3 +173,23 @@ SELECT * FROM tbcliente WHERE DAY(FECHA_NACIMIENTO) = 20;
 
 Nota: El script contiene solo las líneas de código relevantes para el resumen del texto. El archivo completo del texto
 incluye más ejemplos y detalles sobre el uso de filtros con fechas.
+
+## filtros compuestos
+
+1. Filtros compuestos:
+   - Se explica cómo utilizar filtros compuestos en MySQL para refinar las consultas.
+   - Se muestra cómo combinar condiciones utilizando los operadores AND y OR para crear consultas más específicas.
+   - Se ejemplifica un filtro compuesto para seleccionar registros donde el precio de lista sea mayor que 15 y menor
+     que 25, y donde el tamaño sea igual a 1 litro o el envase sea lata o botella PET.
+
+Script de SQL basado en el resumen:
+
+```sql
+-- Filtros compuestos
+SELECT * FROM tbproducto WHERE ENVASE = 'Lata' OR ENVASE = 'Botella PET';
+SELECT * FROM tbproducto WHERE PRECIO_LISTA > 15 AND PRECIO_LISTA < 25;
+SELECT * FROM tbproducto WHERE (PRECIO_LISTA > 15 AND PRECIO_LISTA < 25) OR TAMANO = '1 Litro';
+```
+
+Nota: El script contiene solo las líneas de código relevantes para el resumen del texto. El archivo completo del texto
+incluye más ejemplos y detalles sobre el uso de filtros compuestos.
