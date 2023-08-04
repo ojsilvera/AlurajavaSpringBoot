@@ -32,8 +32,6 @@ Las principales definiciones a tener en cuenta en mySQL son:
 
 ## Workbench como IDE para SQL
 
-Resumen del texto como un DBA experto:
-
 1. Instalación y apertura del IDE MySQL Workbench:
 
    - Se ha instalado el MySQL Workbench, que es utilizado como un cliente para acceder a bases de datos.
@@ -76,8 +74,6 @@ entorno gráfico.
 
 ## Crear base de datos
 
-Resumen del texto como un DBA experto:
-
 1. Creación de una base de datos en MySQL:
    - Para crear una base de datos, se utiliza el comando "CREATE DATABASE" seguido del nombre de la base de datos.
    - La opción "IF NOT EXISTS" evita que se cree la base de datos si ya existe.
@@ -102,3 +98,32 @@ Resumen del texto como un DBA experto:
 
 Este resumen destaca el proceso de creación de una base de datos en MySQL, la ejecución de comandos SQL en MySQL
 Workbench, y la ubicación de los archivos de la base de datos en el sistema.
+
+## Crear base de datos con asistente
+
+Resumen del texto como un DBA experto:
+
+1. Creación de una base de datos con el asistente de MySQL Workbench:
+   - En MySQL Workbench, se puede utilizar el asistente para crear una nueva base de datos.
+   - Se accede al asistente haciendo clic derecho en el área de esquemas y seleccionando "create schema".
+   - Se proporciona un nombre para el esquema o base de datos, y se elige un conjunto de caracteres (character set) y
+     una regla de comparación (collation) adecuada para el tipo de datos que se utilizarán.
+
+2. Uso de comillas para evitar conflictos con espacios en el nombre de la tabla:
+   - El asistente utiliza comillas o acentos invertidos para envolver el nombre de la tabla si este contiene espacios o
+     caracteres especiales.
+   - Esto garantiza que no haya conflictos al crear la tabla.
+
+3. Creación de la base de datos utilizando el asistente:
+   - Una vez configurados los detalles en el asistente, se hace clic en "apply" para crear la base de datos con los
+     parámetros especificados.
+   - El asistente generará automáticamente el código SQL correspondiente y lo mostrará en la pestaña de consulta.
+
+4. Ventajas del uso del asistente:
+   - El asistente agiliza el proceso de creación de tablas, especialmente para quienes no están familiarizados con la
+     sintaxis de SQL.
+   - También es útil como recordatorio visual para los comandos SQL y permite adaptarlos según las necesidades específi-
+     cas.
+
+Este resumen destaca el proceso de creación de una base de datos utilizando el asistente de MySQL Workbench y las
+ventajas que ofrece esta herramienta en comparación con la escritura manual de comandos SQL.
