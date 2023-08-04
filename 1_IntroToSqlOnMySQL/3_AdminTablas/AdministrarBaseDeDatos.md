@@ -115,3 +115,32 @@ tabla.
 
 En resumen, se ha creado la tabla de productos para la empresa de jugos, siguiendo los requisitos y consideraciones para
 cada uno de los campos. La tabla se ha creado exitosamente utilizando el asistente de creación de tablas en MySQL Workbench.
+
+## Eliminar tabla
+
+Resumen del texto como un DBA experto:
+
+1. Introducción a la eliminación de tablas:
+   - La eliminación de tablas es un procedimiento delicado y potencialmente peligroso, ya que se puede perder información
+     relevante.
+   - En una base de datos relacional SQL, solo se puede eliminar una tabla si está desvinculada de otras tablas y no se
+     está utilizando en ninguna actividad.
+
+2. Creación de tablas de ejemplo:
+   - Se crean dos tablas de ejemplo llamadas "table clientes 2" y "table clientes 3" para mostrar cómo eliminar tablas.
+
+3. Eliminación de tablas utilizando MySQL Workbench:
+   - Se muestra cómo eliminar una tabla utilizando el asistente de Workbench.
+   - Se selecciona la tabla "table clientes 2", se hace clic derecho y se selecciona "drop table".
+   - Se confirma la eliminación y la tabla es eliminada con éxito.
+
+4. Eliminación de tablas mediante comandos SQL:
+   - Se muestra cómo eliminar una tabla utilizando un script SQL.
+   - Se crea un nuevo script con el comando "DROP TABLE TBCLIENTES3;" y se ejecuta con éxito para eliminar la tabla.
+
+5. Resultado de la eliminación:
+   - Después de eliminar las tablas, se refresca la vista de la base de datos y se confirma que las tablas
+   "table clientes 2" y "table clientes 3" ya no están presentes.
+
+En resumen, se ha demostrado cómo eliminar tablas tanto utilizando MySQL Workbench como mediante comandos SQL. Se enfatiza
+en la precaución que se debe tener al eliminar tablas para evitar la pérdida de información importante.
