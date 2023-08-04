@@ -155,3 +155,38 @@ Resumen del texto como un DBA experto:
 Este resumen destaca el proceso de eliminación de una base de datos en MySQL utilizando tanto comandos SQL como el asis-
 tente de MySQL Workbench, y resalta la importancia de otorgar privilegios adecuados para realizar esta tarea a usuarios
 confiables.
+
+## Linea de comandos
+
+1. Uso de MySQL Workbench como interfaz gráfica:
+   - MySQL Workbench es una interfaz gráfica que facilita la ejecución de comandos SQL.
+   - Se prefiere utilizar Workbench para este curso, aunque también se puede usar la línea de comandos.
+
+2. Acceso a MySQL a través de la línea de comandos:
+   - Se puede acceder a MySQL desde la línea de comandos utilizando el "comand prompt".
+   - Se navega a la carpeta "bin" donde se encuentra el archivo ejecutable de MySQL y se inicia la conexión con el
+     comando "mysql -h localhost -u root -p".
+
+3. Creación de una base de datos mediante línea de comandos:
+   - Se utiliza el comando "CREATE DATABASE" seguido del nombre de la base de datos para crearla.
+   - Al ejecutar el comando, se obtiene el mensaje "Query OK, 1 row affected", lo que indica que la base de datos se
+     creó exitosamente.
+
+4. Visualización de bases de datos y tablas:
+   - En la línea de comandos, se puede seleccionar una base de datos utilizando el comando "USE" seguido del nombre de
+   la base de datos.
+   - Se puede mostrar el contenido de una tabla utilizando el comando "SELECT * FROM table_name".
+
+5. Salida de la base de datos:
+   - Para salir de MySQL desde la línea de comandos, se utiliza el comando "exit".
+
+6. Sensibilidad a mayúsculas y minúsculas en comandos MySQL:
+   - MySQL no distingue entre mayúsculas y minúsculas al ejecutar comandos, aunque se recomienda utilizar mayúsculas
+   para los comandos principales y minúsculas para nombres de tablas y columnas como buena práctica.
+
+7. Recomendación de uso de MySQL Workbench:
+   - Aunque se puede trabajar con MySQL desde la línea de comandos, para el curso se utilizará principalmente MySQL
+   Workbench debido a su interfaz gráfica amigable y facilidad de uso.
+
+Este resumen destaca el uso de la línea de comandos para acceder a MySQL y ejecutar comandos SQL, pero enfatiza que para
+el curso se utilizará principalmente MySQL Workbench debido a su comodidad y practicidad.
