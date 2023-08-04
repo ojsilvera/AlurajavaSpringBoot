@@ -101,8 +101,6 @@ Workbench, y la ubicación de los archivos de la base de datos en el sistema.
 
 ## Crear base de datos con asistente
 
-Resumen del texto como un DBA experto:
-
 1. Creación de una base de datos con el asistente de MySQL Workbench:
    - En MySQL Workbench, se puede utilizar el asistente para crear una nueva base de datos.
    - Se accede al asistente haciendo clic derecho en el área de esquemas y seleccionando "create schema".
@@ -127,3 +125,33 @@ Resumen del texto como un DBA experto:
 
 Este resumen destaca el proceso de creación de una base de datos utilizando el asistente de MySQL Workbench y las
 ventajas que ofrece esta herramienta en comparación con la escritura manual de comandos SQL.
+
+## Eliminar base de datos
+
+Resumen del texto como un DBA experto:
+
+1. Eliminación de una base de datos:
+   - Para eliminar una base de datos en MySQL, se utiliza el comando "DROP DATABASE" o "DROP SCHEMA" seguido del nombre
+     de la base de datos que se desea eliminar.
+   - La condición "IF EXISTS" se puede utilizar para evitar errores si la base de datos no existe.
+
+2. Eliminación de una base de datos mediante comandos SQL:
+   - En MySQL Workbench, se puede ejecutar el comando "DROP DATABASE" o "DROP SCHEMA" seguido del nombre de la base de
+     datos y un punto y coma para eliminarla directamente.
+   - El resultado en el output mostrará el mensaje "0 rows affected" para indicar que la base de datos se ha eliminado
+     correctamente.
+
+3. Eliminación de una base de datos utilizando el asistente de MySQL Workbench:
+   - En MySQL Workbench, también se puede eliminar una base de datos utilizando el asistente.
+   - Al hacer clic derecho en el nombre de la base de datos y seleccionar "drop schema", se puede revisar el SQL generado
+     para la eliminación antes de ejecutarlo.
+
+4. Privilegios para eliminar bases de datos:
+   - La capacidad de eliminar bases de datos suele estar restringida a los administradores de la base de datos o DBAs,
+     quienes tienen permisos especiales para realizar operaciones delicadas como esta.
+   - La eliminación de bases de datos puede ser peligrosa si se realiza sin cuidado, por lo que se recomienda que solo
+     usuarios autorizados realicen esta acción.
+
+Este resumen destaca el proceso de eliminación de una base de datos en MySQL utilizando tanto comandos SQL como el asis-
+tente de MySQL Workbench, y resalta la importancia de otorgar privilegios adecuados para realizar esta tarea a usuarios
+confiables.
