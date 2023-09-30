@@ -1,0 +1,3 @@
+En primer lugar, si no está familiarizado con la idea de IDE, es una sigla para "Integrated Development Environment" que traducido sería entorno de desarrollo integrado, es decir, un entorno instalado en su sistema operativo para poder manejar diferentes características presentes en un proyecto de desarrollo.
+
+En este curso estamos utilizando la IDE Intellij IDEA pero existen otras herramientas que pueden ser utilizadas para el desarrollo con Java. Le recomendamos que use el mismo IDE que el maestro usa en el curso, sin embargo, no hay problema en usar otros IDEs y explorar los beneficios de ellos.
