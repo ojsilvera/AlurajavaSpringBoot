@@ -1,0 +1,27 @@
+[00:00] Este último video es un caso que van a ver muy seguido en el mundo laboral y es un pedido, un caso de uso normal, es lo más común, entonces es bueno que lo vemos aquí. En mi caso, yo me olvidé de agregar el teléfono. Aquí vemos que en el formulario que necesitamos llenar el teléfono no está presente aquí, pero me piden dar un teléfono del médico para contactarlo obviamente, fuera del email.
+
+[00:33] Entonces, puede ser que de repente en tu trabajo algún día te digan por regla de negocio necesitamos agregar un nuevo campo, porque al final es lo que vamos a hacer, agregar un nuevo campo aquí. ¿Qué hacemos ahora? Bueno. Podemos hacerlo de dos formas. Como siempre les digo, podemos agregarle aquí clic derecho en tu cliente y agregar una columna, el modo más fácil, o través de migraciones.
+
+[00:54] Si vamos a trabajar migraciones, como ya vimos, hay que detener el servidor, lo detenemos aquí, limpiamos esto. Y venimos aquí a nuestra carpeta de migrations. ¿Y qué hacemos? ¿Cuál es el primer paso para crear una migration? Correcto. Vamos a crear el archivo SQL. Entonces vamos a file y si ya tengo V1, ¿cuál será el nombre para este? V2. Perfecto V2__ y el nombre del archivo.
+
+[01:26] En este caso, si voy a agregar una nueva columna a mi tabla es un alter table, entonces alter-table-medicos-add-telefono. Y la tercera parte del nombre es el punto SQL, es la extensión del archivo. Entonces tenemos aquí el V2, el alter-table, que es el nombre autoexplicativo de lo que esta migración está haciendo y el punto SQL.
+
+[02:00] Perfecto. Le damos enter. Lo agregamos a Git y ya está. Y ponemos el código para agregar el teléfono. Entonces vemos que no puede llegar nulo, etcétera. Y listo. A nivel de base de datos, a nivel de migración, eso es todo lo que hay que hacer, pero recuerden, no puede ser nulo.
+
+[02:25] Entonces necesitamos actualizar también en nuestra entidad médico, entonces lo que yo voy a hacer aquí es decirle private String, porque aquí en el tipo de dato, es un varchar, aquí va a ser un String, que va a ser teléfono. Listo. Entonces aquí yo le voy a agregar this.telefono = datosRegistroMedico.telefono() y me va a dar un error porque obviamente no existe. ¿Qué tengo que hacer aquí?
+
+[03:08] Crearlo ahí también. Entonces voy a entrar aquí a datosRegistroMedico, voy a venir aquí abajo de email y voy a crear String teléfono y también NotBlank. Podría agregarle una validación para el formato también para un patrón de teléfono, pero ya lo hemos visto con documento. No vamos a repetir ahora. Entonces ya tenemos teléfono, no puede llegar blanco. ¿Qué significa? Ni nulo ni vacío.
+
+[03:39] Ya está aquí. Entonces voy a recibir, ya lo estoy mapeando en médico, ya está llegando aquí. Por lo tanto ya va a estar aquí en mi base de datos también entonces, ahora vamos a ejecutar y vamos a ver los logs, vamos a ver qué nos dice ahora Spring Boot. Esperamos un poco, vemos que inicializó, vamos a revisar qué es lo que pasó.
+
+[04:02] Aquí en Migrating to version 2. ¿Por qué? Porque ya detectó la nueva migración. Esto es a los que yo me refería. En la base de datos de Flyway que está aquí, él ya agregó ahora la versión 2, ya la tiene versionada. Satisfactoriamente se aplicó una migración, está la versión 2, por lo tanto, ya tenemos el nuevo campo listo y disponible para ser usado.
+
+[04:30] Vamos a probar si esto de verdad está funcionando, entonces voy a cambiar totalmente los datos aquí. Voy a poner un nombre, por ejemplo Erick Cárdenas. En nombre va a ir Erick Cárdenas. En el documento ya vimos que es unique también, dos datos iguales, aparece Calle 2, distritos, etcétera, solo dos diferentes para que no se vea igual también en la base de datos. Es información de prueba, entonces puede ser cualquier cosa.
+
+[05:04] Tenemos aquí nuestro payload ya está con el nombre. No está con el teléfono. Entonces, si yo le voy aquí a enviar recibo un bad request porque en el campo teléfono no hay ninguna información aquí. Entonces rejected value porque está nulo. ¿Qué voy a hacer? Voy a agregar el teléfono. Creo aquí teléfono. Y voy a ponerle un teléfono cualquiera. Listo, porque es un varchar, va a soportar todo.
+
+[05:41] Ahora se lo voy a enviar y me da un 200. Entonces, si reviso aquí en mi tabla médicos, vamos a ver que Erick Cárdenas fue guardado y ya tiene un número de teléfono agregado. ¿Por qué? Porque la migración corrió satisfactoriamente y agregó el nuevo campo, tanto a nivel de la base de datos como a nivel de la entidad y a nivel de nuestro DTO.
+
+[06:11] Entonces, como les dije, este es un caso de uso muy común en el trabajo. Practiquen bastante esto porque es más común de lo que se imaginan. Yo lo he aplicado creo que infinitas veces en mi día a día laboral. Es normal que se agreguen campos, incluso que se eliminen campos, que se dividan tablas, y ese es el poder de los migrations.
+
+[06:36] Tú puedes gestionar completamente toda la evolución de tu base de datos a través de código SQL. Eso significa que si tú haces una migración a otra base de datos, no te preocupes porque te la llevas contigo, son migrations. Como siempre les digo, dudas en el foro, nos vemos en la siguiente clase porque ya sabemos cómo guardar elementos, pero ahora hay que listarlos, tenemos que listar los médicos. Estudian, practiquen, nos vemos.

@@ -1,0 +1,3 @@
+Como se explicó en el video anterior, el Bean Validation se compone de varias anotaciones que se deben agregar a los atributos en los que queremos realizar las validaciones. Hemos visto algunas de estas anotaciones, como @NotBlank, que indica que un atributo String no puede ser nulo o vacío.
+
+Sin embargo, existen decenas de otras anotaciones que podemos utilizar en nuestro proyecto, para los más diversos tipos de atributos. Puede consultar una lista de las principales anotaciones de Bean Validation en la documentación oficial de la especificación.

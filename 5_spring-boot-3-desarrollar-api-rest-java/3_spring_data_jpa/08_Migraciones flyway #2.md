@@ -1,0 +1,15 @@
+[00:00] Dado que el error está en la sintaxis, es por el inicio por la v, como decimos en mi país o v también, debería ser también mayúsculas. Entonces aquí lo que vamos a hacer es V1, pasamos a refactor, nuevamente tenemos el servidor para evitar cualquier tipo de problemas, vamos a borrar estos logs e iniciar nuevamente para ver cómo es este proceso. Iniciamos.
+
+[00:30] El servidor inició correctamente y vamos a ver los logs. Flyway inicia y vemos aquí que inicializó con base de datos, inicia correctamente y successfully validated 1 migration y la ejecutó en 18 segundos, perdón 18 milisegundos prácticamente. Vemos que creó la tabla médicos y satisfactoriamente aplicó una migración ahora, en versión 1.
+
+[01:10] Tenemos aquí, vemos que tiene una tabla que es la tabla del esquema de Flyway. Flyway yo me refería a esto con la nomenclatura. Internamente Flyway maneja las versiones en su propia tabla de modo que él identifica que V1 ya fue ejecutado por lo tanto voy a refrescar aquí para ver las tablas y vemos que ya tengo mi tabla médicos.
+
+[01:37] Ya está aquí con dos atributos que yo le he especificado. Todos mis atributos con el tipo de datos que yo quiero. Ahora por ejemplo, ustedes me preguntarán si esto ejecutó cuando el servidor inició, ¿significa que si ejecuto nuevamente va a crear la base de datos nuevamente? No. Y eso lo vamos a probar ahora. Voy a detener el servidor. Si ustedes pueden ver aquí dice claramente que se aplicó a la migration.
+
+[02:07] Entonces voy a borrar esto y voy a ejecutar el servidor nuevamente. El servidor inicia pero esta vez si vemos aquí, válido una migración, pero el esquema vollmed_api está al día, no migration necessary. ¿Por qué? Porque en esta tabla que están viendo aquí de flyway_schema_history él aquí ya sabe que esta migration que inicia con V1 ya fue aplicado, por lo tanto no es necesario que la vuelva a aplicar.
+
+[02:47] Y por esto que se llama un sistema de versión de base de datos, porque si necesitas aplicar más migrations, por ejemplo, creas un V2, Flyway va a detectar que no la tiene y simplemente va a ejecutarla. Vamos a ver si está funcionando correctamente nuestra aplicación. Vamos a ejecutar nuestro cliente, vamos a enviar nuevamente los datos, tengo solamente 500 internal server error.
+
+[03:16] ¿Y ahora, qué es lo que pasó? Venimos por aquí. ¿Y qué nos va a decir? Columna ‘calle’ no puede ser nula. Eso es un dato muy interesante, porque ya nos estamos dando cuenta que tenemos que comenzar a validar algunos campos que están llegando aquí. ¿Por qué? Porque simplemente aquí tenemos el constrain de que no puede ser null.
+
+[03:44] Si se dan cuenta aquí en la base de datos le hemos dicho: “no queremos que ningún atributo sea nulo”. Aquí está, a excepción de número y complemento, porque en direcciones esto es opcional. ¿Qué es lo que sigue ahora? Correcto. Ahora vamos a comenzar a ver lo que son validaciones. Eso es un tema de siguiente video. Nos vemos.
